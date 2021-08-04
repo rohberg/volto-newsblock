@@ -1,7 +1,5 @@
 import { defineMessages } from 'react-intl';
 
-import HistoryWidget from './widgets/HistoryWidget/HistoryWidget';
-
 // Did you customize Volto components? Override here!
 const messages = defineMessages({
   home: {
@@ -10,4 +8,3 @@ const messages = defineMessages({
   },
 });
 
-export { HistoryWidget };
