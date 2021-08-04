@@ -7,4 +7,3 @@ const messages = defineMessages({
     defaultMessage: 'Home',
   },
 });
-
