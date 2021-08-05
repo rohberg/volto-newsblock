@@ -9,8 +9,12 @@ const ItemSchema = () => {
         title: 'News Item',
         widget: 'object_browser',
         mode: 'link',
-        maximumSelectionSize: 1,
-        selectableTypes: ['News Item'],
+        widgetOptions: {
+          pattern_options: {
+            maximumSelectionSize: 1,
+            selectableTypes: ['News Item'],
+          },
+        },
       },
     },
     fieldsets: [
