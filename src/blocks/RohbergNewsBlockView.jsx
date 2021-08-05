@@ -11,14 +11,14 @@ const View = ({ data }) => {
         ? data.news_list?.items.map((item, index) =>
             item.newsitem ? (
               <div key={index}>
-                <Link to={flattenToAppURL(item.newsitem[0].getURL)}>
+                <Link to={flattenToAppURL(item.newsitem[0]?.getURL)}>
                   <img
                     src={flattenToAppURL(
-                      item.newsitem[0].getURL + `/@@images/image/mini`,
+                      item.newsitem[0]?.getURL + `/@@images/image/mini`,
                     )}
                     alt="news"
                   />
-                  <div>{item.newsitem[0].title}</div>
+                  <div>{item.newsitem[0]?.title}</div>
                 </Link>
               </div>
             ) : null,

@@ -33,11 +33,11 @@ const Edit = ({ data, onChangeBlock, block, selected }) => {
                 <div key={index}>
                   <img
                     src={flattenToAppURL(
-                      item.newsitem[0].getURL + `/@@images/image/mini`,
+                      item.newsitem[0]?.getURL + `/@@images/image/mini`,
                     )}
                     alt="news"
                   />
-                  <div>{item.newsitem[0].title}</div>
+                  <div>{item.newsitem[0]?.title}</div>
                 </div>
               ) : null,
             )
