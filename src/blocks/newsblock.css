@@ -1,0 +1,10 @@
+.block.newsblock {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block.newsblock div {
+  margin-right: 1rem;
+}
+.block.newsblock div:last-of-type {
+  margin-right: 0rem;
+}

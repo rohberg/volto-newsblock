@@ -2,6 +2,7 @@ import icon from '@plone/volto/icons/list-bullet.svg';
 
 import RohbergNewsBlockEdit from './blocks/RohbergNewsBlockEdit';
 import RohbergNewsBlockView from './blocks/RohbergNewsBlockView';
+import NewsBlockWidget from './blocks/NewsBlockWidget';
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.rohbergnewsblock = {
@@ -10,7 +11,7 @@ const applyConfig = (config) => {
     edit: RohbergNewsBlockEdit,
     view: RohbergNewsBlockView,
     icon: icon,
-    group: 'text',
+    group: 'common',
     restricted: false,
     mostUsed: false,
     sidebarTab: 1,
@@ -19,6 +20,8 @@ const applyConfig = (config) => {
       view: [],
     },
   };
+
+  config.widgets.widget.newsblockwidget = NewsBlockWidget;
 
   return config;
 };
